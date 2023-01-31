@@ -18,7 +18,6 @@ module.exports = {
         console.log(err)
         return res.status(500).json(err)
       });
-    //   .catch((err) => res.status(500).json(err));
   },
   createThought(req, res) {
     Thought.create(req.body)
@@ -35,11 +34,6 @@ module.exports = {
           : res.json(thought)
       )
       .catch((err) => res.status(500).json(err));
-    //   .then((thought) => res.json(thought))
-    //   .catch((err) => {
-    //     console.log(err)
-    //     return res.status(500).json(err)
-    //   });
   },
   updateThought(req, res) {
     Thought.findOneAndUpdate( 
