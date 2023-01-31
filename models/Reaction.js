@@ -1,6 +1,8 @@
 const { Schema, Types } = require("mongoose");
+// // Requires moment to format the time for when reactions are created
 const moment = require("moment");
 
+// Subdocument schema for the thought model
 const reactionSchema = new Schema(
   {
     reactionId: {

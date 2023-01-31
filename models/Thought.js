@@ -1,7 +1,10 @@
 const { Schema, model } = require("mongoose");
+// Uses Reaction.js as a subdocument schema to format the reactions
 const reactionSchema = require("./Reaction");
+// Requires moment to format the time for when thoughts are created
 const moment = require("moment");
 
+// Schema to create thought model
 const thoughtSchema = new Schema(
   {
     thoughtText: {
@@ -23,13 +26,13 @@ const thoughtSchema = new Schema(
   },
   {
     toJSON: {
-      // virtuals: true, 
       getters: true,
     },
     id: false,
   }
 );
 
+// Virtual property that returns how many reactions the thought post has
 thoughtSchema.virtual("reactionCount").get(function () {
   return this.reactions.length;
 });
