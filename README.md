@@ -15,40 +15,39 @@
   * [Questions](#questions)
   
   ## Description
-  With the internet and social media being such a prevalent part of most people's lives, many companies are trying to come up with the next big social media platform. This application 
-  is the API for the backend of a social network web app where users can share their thoughts, react to friends' thoughts, and create a list of friends. There is no front end to this 
-  application so functionality will be shown through a walkthrough video below using [Insomnia](https://insomnia.rest/). 
+  With the internet and social media being such a prevalent part of most people's lives, many companies are trying to come up with the next big social media platform.   This application is the API for the backend of a social network web app where users can share their thoughts, react to friends' thoughts, and create a list of friends. I used MongoDB for the database because of its high speed and flexibility when using a large amount of data, which would be needed for a large scale social network app. There is no front end to this application so functionality will be shown through a walkthrough video below using [Insomnia](https://insomnia.rest/). 
 
   ## Installation
   * Clone or fork repository to local machine 
   * Run ```npm i``` to install dependencies listed in package.json
 
   ## Usage
-  **Walkthrough video:** INSERT VIDEO
+
+  **Walkthrough video:** [jareds-social-network-apiVIDEO.webm](https://user-images.githubusercontent.com/112585959/215871505-f1ee3cb7-9fc1-48c3-9d3b-f6305bc15e67.webm)
   * Run ```npm start``` to start application
   * Create seed data and test routes with [Insomnia](https://insomnia.rest/):
 
-  - Users
-    - Create new user: POST /api/users
-    - Get all users: GET /api/users
-    - Get single user: GET /api/users/:userId
-    - Update user: PUT /api/users/:userId
-    - Delete user: DELETE /api/user/:userId
+    - Users
+      - Create new user: POST /api/users
+      - Get all users: GET /api/users
+      - Get single user: GET /api/users/:userId
+      - Update user: PUT /api/users/:userId
+      - Delete user: DELETE /api/user/:userId
 
-  - Thoughts
-    - Create new thought: POST /api/thoughts/
-    - Get all thoughts: GET /api/thoughts/
-    - Get single thought: GET /api/thoughts/:thoughtId
-    - Update thought: PUT /api/thoughts/:thoughtId
-    - Delete thought: DELETE /api/thoughts/:thoughtId
+    - Thoughts
+      - Create new thought: POST /api/thoughts/
+      - Get all thoughts: GET /api/thoughts/
+      - Get single thought: GET /api/thoughts/:thoughtId
+      - Update thought: PUT /api/thoughts/:thoughtId
+      - Delete thought: DELETE /api/thoughts/:thoughtId
 
-  - Friends
-    - Add new friend to user's friend list: POST /api/users/:userid/friends/:friendId
-    - Delete friend from user's friend list: DELETE /api/users/:userid/friends/:friendId
+    - Friends
+      - Add new friend to user's friend list: POST /api/users/:userid/friends/:friendId
+      - Delete friend from user's friend list: DELETE /api/users/:userid/friends/:friendId
 
-  - Reactions
-    - Create a reaction to thought: POST /api/thoughts/:thoughtId/reactions
-    - Delete a reaction: DEL /api/thoughts/:thoughtId/reactions/:reactionId
+    - Reactions
+      - Create a reaction to thought: POST /api/thoughts/:thoughtId/reactions
+      - Delete a reaction: DEL /api/thoughts/:thoughtId/reactions/:reactionId
 
   * Database will be stored in MongoDB: <br>
   
