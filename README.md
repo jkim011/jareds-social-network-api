@@ -51,7 +51,9 @@
     - Delete a reaction: DEL /api/thoughts/:thoughtId/reactions/:reactionId
 
   * Database will be stored in MongoDB: <br>
-  INSERT IMAGE OF COMPASS SCREEN 
+  
+  ![MongoDBCompass](https://user-images.githubusercontent.com/112585959/215868414-7d97e511-0f5c-4dc2-b932-441c86b20cfe.PNG)
+  
   - In [MongoDB compass](https://www.mongodb.com/products/compass), connect to ```mongodb://localhost:27017```
   - socialNetwork is the name of the database with the users and thoughts data
 
